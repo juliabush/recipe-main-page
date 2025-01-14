@@ -104,9 +104,92 @@
   }
   .website__preparation-box li {
     margin-bottom: .5rem;
+    padding-left: 1rem;
   }
   .website__preparation-box li::marker {
+    color: var(--clr-Rose-800);
+    list-style-position: outside;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-family: var(--ff-accent);
+    margin-bottom: .5rem;
     color: var(--clr-Brown-800);
-    list-style-type: disc;
-    
+    letter-spacing: .5px;
+    font-weight: var(--fw-light);
+  }
+  .website__ingredient-list li {
+    margin-bottom: .5rem;
+    padding-left: 1rem;
+  }
+  .website__ingredient-list {
+    margin-bottom: 1rem;
+  }
+  hr {
+    display: block;
+    height: 1px;
+    background-color: black;
+    opacity: 0.5;
+  }
+  h4, h5 {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-family: var(--ff-accent);
+    margin-bottom: 1rem;
+    color: var(--clr-Brown-800);
+    font-weight: var(--fw-light);
+  }
+ 
+  .website__instruction-list {
+    margin-bottom: 1rem;
+  }
+  .website__instruction-list li {
+    margin-top: .5rem;
+    padding-left: 1rem;
+  }
+  .website__instruction-list li::marker {
+    color: var(--clr-Brown-800);
+    font-weight: var(--fw-bold);
+    font-size: 1rem;
+  }
+  .website__instruction-list span {
+    color: var(--clr-Stone-900);
+    font-weight: var(--fw-mid);
+  }
+  .nutrition-facts__description {
+    margin-bottom: 2rem;
+  }
+  .nutrition-facts__info {
+    margin: .7rem;
+    margin-left: 2rem;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nutrition-facts__info span {
+    font-weight: var(--fw-mid);
+    color: var(--clr-Brown-800);
+  }
+  @media (min-width: 600px) {
+    html {
+      height: 100%;
+      background-color: var(--clr-Stone-100);
+      display: grid;
+      justify-content: center;
+    }
+    body {
+      margin-bottom: 4rem;
+      margin-top: 4rem;
+      max-width: 600px;
+      background-color: white;
+      border-radius: 1rem;
+      padding: 1.5rem;
+    }
+    img {
+     border-radius: 1rem;
+    }
+    .website__main-text {
+      margin: 0;
+      margin-top: 2rem;
+    }
   }
